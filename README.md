@@ -1,6 +1,9 @@
 # Card
 
-Full-stack developer profile card built with **Next.js 16**, **React 19**, **Tailwind CSS 4** and **Framer Motion**.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=this is card&font=Fira+Code&center=true&width=440&height=45&color=ffffff&vCenter=true&size=22">
+</p>
+
 
 ## Run locally
 
