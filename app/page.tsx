@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useMotionValue, useSpring, AnimatePresence } from "framer-motion";
 import { 
   SiJavascript, SiPython, SiHtml5, SiCss3, 
-  SiPhp, SiReact, SiCplusplus, SiTelegram 
+  SiPhp, SiReact, SiCplusplus, SiTelegram, SiGithub 
 } from "react-icons/si";
 import { IoSettingsOutline } from "react-icons/io5";
 
@@ -145,9 +145,29 @@ export default function ProfileCard() {
           ))}
         </div>
 
+        <div className="flex items-center justify-center gap-3 mb-8">
+          <motion.a
+            href="https://t.me/test"
+            target="_blank"
+            whileHover={{ scale: 1.15, color: "#229ED9", filter: "drop-shadow(0 0 15px #229ED9cc)" }}
+            whileTap={{ scale: 0.9 }}
+            className="w-12 h-12 flex items-center justify-center text-2xl text-white/60 border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 transition-all"
+          >
+            <SiTelegram />
+          </motion.a>
+          <motion.a
+            href="https://github.com/ByteXk"
+            target="_blank"
+            whileHover={{ scale: 1.15, color: "#fff", filter: "drop-shadow(0 0 15px #ffffffcc)" }}
+            whileTap={{ scale: 0.9 }}
+            className="w-12 h-12 flex items-center justify-center text-2xl text-white/60 border border-white/10 rounded-xl bg-white/5 hover:bg-white/10 transition-all"
+          >
+            <SiGithub />
+          </motion.a>
+        </div>
 
         <motion.a
-          href="https://github.com/ByteXk"
+          href="https://t.me/test"
           target="_blank"
           whileHover={{ scale: 1.05, backgroundColor: "#000", borderColor: "rgba(255,255,255,0.4)" }}
           whileTap={{ scale: 0.95 }}
