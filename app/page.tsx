@@ -9,9 +9,9 @@ import {
 import { IoSettingsOutline } from "react-icons/io5";
 
 const translations = {
-  RU: { role: "Full-stack разработчик", contact: "Связаться со мной" },
-  EN: { role: "Full-stack developer", contact: "Contact Me" },
-  UA: { role: "Full-stack розробник", contact: "Зв'язатися зі мною" },
+  RU: { role: "Full-stack разработчик" },
+  EN: { role: "Full-stack developer" },
+  UA: { role: "Full-stack розробник" },
 };
 
 const languages = [
@@ -145,7 +145,7 @@ export default function ProfileCard() {
           ))}
         </div>
 
-        <div className="flex items-center justify-center gap-3 mb-8">
+        <div className="flex items-center justify-center gap-3">
           <motion.a
             href="https://t.me/test"
             target="_blank"
@@ -165,17 +165,6 @@ export default function ProfileCard() {
             <SiGithub />
           </motion.a>
         </div>
-
-        <motion.a
-          href="https://t.me/test"
-          target="_blank"
-          whileHover={{ scale: 1.05, backgroundColor: "#000", borderColor: "rgba(255,255,255,0.4)" }}
-          whileTap={{ scale: 0.95 }}
-          className="flex items-center justify-center gap-3 w-full py-4 bg-black text-white rounded-2xl font-black text-lg transition-all border border-white/20 shadow-lg"
-        >
-          <SiTelegram className="text-2xl text-white" />
-          {translations[lang].contact}
-        </motion.a>
       </motion.div>
 
 
